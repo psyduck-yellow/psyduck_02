@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset = "UTF-8"></meta>
+		<title>Hello_World</title>
+	</head>
+	
+	<body>
+		<h1>Welcom to my life</h1>
+		<form method = "post" action = "hello.html">
+			input text:<input type = "text" name = "text_1" th:value = "${text_1_value}">
+			<input type = "submit" value = "send" >
+		</form>
+		<br>
+		
+		<form method = "post" action = "/hello/db">
+			input ID:<input type = "text" name = "ID" th:value = "${ID_value}">
+			<input type = "submit" value = "send" >
+		</form>
+	</body>
+</html>

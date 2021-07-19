@@ -26,13 +26,13 @@ public class Controller {
      * POST用の処理.
      */
     @PostMapping("/hello")
-    public String postRequest(@RequestParam("text1") String str, Model model) {
+    public String postRequest(@RequestParam("text_1") String str, Model model) {
 
         // 画面から受け取った文字列をModelに登録
         model.addAttribute("sample", str);
 
         // helloResponse.htmlに画面遷移
-        return "Response";
+        return "helloRepositoryDB";
     }
 
     /**
@@ -53,6 +53,6 @@ public class Controller {
         model.addAttribute("age", employee.getArea());
 
         // helloResponseDB.htmlに画面遷移
-        return "helloResponseDB";
+        return "helloRepositoryDB.html";
     }
 }

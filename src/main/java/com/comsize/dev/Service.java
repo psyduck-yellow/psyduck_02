@@ -3,10 +3,11 @@ package com.comsize.dev;
 import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 
+//@Serviceアノテーション＝サービスクラスにつけるアノテーション
 @org.springframework.stereotype.Service
 public class Service {
 	@Autowired
-	private Repository repository;
+	private HelloRepository repository;
 	
 	public Employee findOne(int id) {
 		Map<String, Object> map = repository.findOne(id);

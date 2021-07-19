@@ -4,6 +4,7 @@ public class Employee {
 	private int id;
 	private String name;
 	private String area;
+	
 	public int getId() {
 		return id;
 	}

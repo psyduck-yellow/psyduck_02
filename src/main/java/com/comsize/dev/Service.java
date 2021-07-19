@@ -12,9 +12,9 @@ public class Service {
 	public Employee findOne(int id) {
 		Map<String, Object> map = repository.findOne(id);
 		
-		int employeeId = (Integer)map.get("employeeId");
-		String employeeName = (String)map.get("employeeName");
-		String employeeArea = (String)map.get("employeeArea");
+		int employeeId = (Integer)map.get("Id");
+		String employeeName = (String)map.get("Name");
+		String employeeArea = (String)map.get("Area");
 		
 		Employee employee = new Employee();
 		employee.setId(employeeId);

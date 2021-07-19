@@ -50,7 +50,7 @@ public class Controller {
         // 検索結果をModelに登録
         model.addAttribute("id", employee.getId());
         model.addAttribute("name", employee.getName());
-        model.addAttribute("age", employee.getArea());
+        model.addAttribute("area", employee.getArea());
 
         // helloResponseDB.htmlに画面遷移
         return "helloRepositoryDB.html";

@@ -8,7 +8,7 @@
 		<version>2.5.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.tuyano.springboot</groupId>
+	<groupId>com.comsize.dev</groupId>
 	<artifactId>psyduck_02</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>psyduck_02</name>
